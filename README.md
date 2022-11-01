@@ -99,3 +99,19 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 -   good use case: handling form input to store in database
 -   **Preview Mode**: bypass Static Generation
 -   can be dynamic
+
+## Deployment
+
+-   **Vercel**: use all default settings
+-   **Preview Deployment**: push code to a new branch and create PR to merge to `main` - Vercel will add a preview link as a comment
+-   deploying elsewhere: run `npm run build` which builds production app in `.next` folder, then run `npm run start` to start the app
+-   can use `"start": "next start -p $PORT"` as npm start script to allow `port` param
+
+## TypeScript NextJS Types
+
+-   `getStaticProps`: `GetStaticProps`
+-   `getStaticPaths`: `GetStaticPaths`
+-   `getServerSideProps`: `GetServerSideProps`
+-   API `req`: `NextApiRequest`
+-   API `res`: `NextApiResponse`
+-   top level App props: `AppProps`
